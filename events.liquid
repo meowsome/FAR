@@ -1,0 +1,32 @@
+---
+title: Events
+link: events
+---
+
+{% include header %}
+
+<section class="left wrapper-vertical">
+    <div class="p3">
+        <h2>Upcoming Events</h2>
+    </div>
+    <div class="w10 wrapper-horizontal">
+        {% for event in calendar %}
+        <div class="w5">
+            <div class="p1">
+                <article class="card w10 foreground slidein1">
+                    <div class="p3 wrapper-vertical margin-below left">
+                        <p class="accent pill"><b>{{ event.startDate }}</b></p>
+                        <h3>{{ event.title }}</h3>
+                        <p>{{ event.location }}</p>
+                        <p>{{ event.description }}</p>
+                        <p>{{ event.startTime }}</p>
+                        <p>{{ event.endTime }}</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% include footer %}

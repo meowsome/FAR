@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{% if title %}{{ title }} / {% endif %}Furs at Riddle</title>
+    <link rel="shortcut icon" type="image/png" href="/assets/images/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="erau, embry-riddle, embry-riddle aeronautical university, riddle, university, furry, far, fars, furs at riddle">
+    <meta name="description" content="DESC">
+    <meta property="og:title" content="{% if title %}{{ title }} / {% endif %}Furs at Riddle">
+    <meta property="og:description" content="DESC">
+    <meta property="og:image" content="https://URL/assets/images/logo.jpg">
+    <meta property="og:url" content="https://URL">
+    <meta property="og:type" content="website">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="preload" href="/assets/fonts/Cerebri-Sans-Book.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/assets/fonts/Rubik-Bold.woff" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="site-padding">
+        <div class="main">
+            <header class="w10">
+                <div class="wrapper-horizontal center">
+                    <div class="w4 left alt-left">
+                        <a class="link ripple-button-dark" href="/">
+                            {% if title and links == null %}
+                                <div class="wrapper-horizontal center left">
+                                    <img class="icon"  src="/assets/images/logo.jpg">
+                                    &nbsp;
+                                    <div class="wrapper-vertical">
+                                        <h3>{{ title }}</h3>
+                                        <h5>Furs at Riddle</h5>
+                                    </div>
+                                </div>
+                            {% else %}
+                                <div class="wrapper-horizontal center left">
+                                    <img class="icon" src="/assets/images/logo.jpg">
+                                    &nbsp;
+                                    <h4>Furs at Riddle</h4>
+                                </div>
+                            {% endif %}
+                        </a>
+                    </div>
+                    <div class="right w6 alt-left">
+                        <div class="wrapper-horizontal">
+                            <a href="/" class="link ripple-button-dark{% if index %} active{% endif %}">About</a>
+                            <a href="/events" class="link ripple-button-dark{% if title == 'Events' %} active{% endif %}">Events</a>
+                            <a href="/join" class="link ripple-button-dark{% if title == 'Join' %} active{% endif %}">Join</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
