@@ -104,9 +104,10 @@ li {
     font-size: 16px;
 }
 
-a:link,
-a:visited {
-    text-decoration: none !important;
+p a:link,
+p a:visited {
+
+    text-decoration: underline !important;
 }
 
 footer p,
@@ -143,11 +144,6 @@ body {
 ul {
     margin-block-start: 0;
     margin-block-end: 0;
-    padding-inline-start: 0;
-}
-
-li {
-    list-style-type: none;
 }
 
 .wrapper-horizontal {
@@ -775,7 +771,7 @@ a.pill.accent {
 a,
 p,
 li {
-    color: #838383;
+    color: #838383!important;
 }
 
 a:link,
