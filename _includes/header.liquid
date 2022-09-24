@@ -20,12 +20,13 @@
 </head>
 
 <body>
+    <div class="header-image"></div>
     <div class="site-padding">
         <div class="main">
             <header class="w10">
                 <div class="wrapper-horizontal center">
                     <div class="w4 left alt-left">
-                        <a class="link ripple-button-dark" href="/">
+                        <a class="link ripple-button-light" href="/">
                             {% if title and links == null %}
                                 <div class="wrapper-horizontal center left">
                                     <img class="icon"  src="/assets/images/logo.jpg">
@@ -46,9 +47,9 @@
                     </div>
                     <div class="right w6 alt-left">
                         <div class="wrapper-horizontal">
-                            <a href="/" class="link ripple-button-dark{% if index %} active{% endif %}">About</a>
-                            <a href="/events" class="link ripple-button-dark{% if title == 'Events' %} active{% endif %}">Events</a>
-                            <a href="/join" class="link ripple-button-dark{% if title == 'Join' %} active{% endif %}">Join</a>
+                            <a href="/" class="link ripple-button-light{% if index %} active{% endif %}">About</a>
+                            <a href="/events" class="link ripple-button-light{% if title == 'Events' %} active{% endif %}">Events</a>
+                            <a href="/join" class="link ripple-button-light{% if title == 'Join' %} active{% endif %}">Join</a>
                         </div>
                     </div>
                 </div>

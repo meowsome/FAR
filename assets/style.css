@@ -406,7 +406,7 @@ textarea:focus {
 
 button,
 .button {
-    background: #0415fa;
+    background: #f9e109;
     display: block;
     color: rgba(255, 255, 255, 0.85) !important;
     cursor: pointer;
@@ -449,7 +449,7 @@ button:hover,
 
 a:link.pill.accent:hover,
 a:visited.pill.accent:hover {
-    background: #0415fa;
+    background: #f9e109;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-1px);
 }
@@ -473,7 +473,7 @@ a:visited.pill.accent:hover {
     position: absolute;
     z-index: -1;
     top: -2.5em;
-    right: 0;
+    left: 0;
     white-space: nowrap;
     transform: translateY(0.2em);
     box-shadow: 0 2px 20px rgba(0,0,0,.1);
@@ -769,7 +769,14 @@ a.pill.accent {
 }
 
 .accent {
-    background: #0415fa;
+    background: #f9e109;
+}
+
+header a,
+header h4,
+header h3,
+header h5 {
+    color: white!important;
 }
 
 a,
@@ -788,14 +795,22 @@ a:visited {
 .text a:visited:hover,
 footer a:link:hover,
 footer a:visited:hover {
-    color: #0415fa;
+    color: #f9e109;
     text-decoration: underline!important;
 }
 
 .link:hover,
 .link:hover h1,
 .link.active {
-    color: #0415fa!important;
+    color: #f9e109!important;
+}
+
+.header-image {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://cdnassets.hw.net/f4/ee/f1abad024c348a768e9eea384010/61b9b0db31e44dec9ef8224c0428b1ac.jpg') center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    position: absolute;
 }
 
 .card h1,
