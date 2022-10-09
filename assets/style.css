@@ -416,7 +416,7 @@ textarea:focus {
 
 button,
 .button {
-    background: #f9e109;
+    background: #dac402;
     display: block;
     color: rgba(255, 255, 255, 0.85) !important;
     cursor: pointer;
@@ -459,7 +459,7 @@ button:hover,
 
 a:link.pill.accent:hover,
 a:visited.pill.accent:hover {
-    background: #f9e109;
+    background: #dac402;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-1px);
 }
@@ -779,7 +779,7 @@ a.pill.accent {
 }
 
 .accent {
-    background: #f9e109;
+    background: #dac402;
 }
 
 header a,
