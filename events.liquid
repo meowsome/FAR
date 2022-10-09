@@ -27,6 +27,15 @@ link: events
                 </article>
             </div>
         </div>
+        {% else %}
+        <div class="w10 center">
+            <article class="card w6 foreground slidein1">
+                <div class="p3 wrapper-vertical margin-below left">
+                    <h3>No Upcoming Events</h3>
+                    <p>There are currently no upcoming events. Please check back later! This page is updated daily.</p>
+                </div>
+            </article>
+        </div>
         {% endfor %}
     </div>
 
