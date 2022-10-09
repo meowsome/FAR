@@ -327,6 +327,16 @@ img {
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
 }
 
+.card.main {
+    position: relative;
+}
+
+.peeker {
+    position: absolute;
+    left: -133px;
+    width: 150px;
+}
+
 .icon {
     height: 3.5em;
     border-radius: 20px;
