@@ -24,30 +24,51 @@
     <div class="site-padding">
         <div class="main">
             <header class="w10">
-                <div class="wrapper-horizontal center">
+                <div id="desktop" class="wrapper-horizontal center">
                     <div class="w4 left alt-left">
                         <a class="link ripple-button-light" href="/">
-                            {% if title and links == null %}
-                                <div class="wrapper-horizontal center left">
-                                    <div class="wrapper-vertical left">
-                                        <img class="icon" src="/assets/images/logo.jpg">
-                                        <h3>Furs at Riddle</h3>
-                                    </div>
-                                </div>
-                            {% else %}
-                                <div class="wrapper-horizontal center left">
-                                    <img class="icon" src="/assets/images/logo.jpg">
-                                    &nbsp;
-                                    <h4>Furs at Riddle</h4>
-                                </div>
-                            {% endif %}
+                            <div class="wrapper-horizontal center left">
+                                <img class="icon" src="/assets/images/logo.jpg">
+                                &nbsp;
+                                <h4>Furs at Riddle</h4>
+                            </div>
                         </a>
                     </div>
-                    <div class="right w6 alt-left">
+
+                    <div id="navigation" class="right w6 alt-left">
                         <div class="wrapper-horizontal">
                             <a href="/" class="link ripple-button-light{% if index %} active{% endif %}">About</a>
                             <a href="/events" class="link ripple-button-light{% if title == 'Events' %} active{% endif %}">Events</a>
                             <a href="/join" class="link ripple-button-light{% if title == 'Join' %} active{% endif %}">Join</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="mobile" class="wrapper-horizontal center">
+                    <div class="w4 left alt-left">
+                        <a class="link ripple-button-light" href="/">
+                            <div class="wrapper-horizontal center left">
+                                <img class="icon" src="/assets/images/logo.jpg">
+                                &nbsp;
+                                <h4>Furs at Riddle</h4>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="right w6 alt-left">
+                        <div class="wrapper-horizontal">
+                            <div class="dropdown link">
+                                <label for="hamburger">
+                                    <i class="fas fa-bars ripple-button-light"></i>
+                                </label>
+                                <input id="hamburger" class="hiddenToggle" type="checkbox">
+
+                                <div id="navigation" class="foreground dropdown-content wrapper-vertical">
+                                    <a href="/" class="link ripple-button-light{% if index %} active{% endif %}">About</a>
+                                    <a href="/events" class="link ripple-button-light{% if title == 'Events' %} active{% endif %}">Events</a>
+                                    <a href="/join" class="link ripple-button-light{% if title == 'Join' %} active{% endif %}">Join</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
