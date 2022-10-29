@@ -726,53 +726,6 @@ a.pill.accent {
     }
 }
 
-/* DESKTOP */
-
-@media only screen and (min-width: 850px) {
-    #index-image {
-        margin-top: -3em;
-    }
-
-    .projects {
-        display: flex;
-        flex-flow: row wrap;
-        width: 100%;
-        margin-bottom: 1em;
-    }
-
-    .projects article {
-        flex: auto;
-        margin: 8px;
-    }
-
-    /* Make every 4th item starting from the 1st 100% width */
-    .projects article:nth-child(4n+1) {
-        width: 100%;
-    }
-
-    /* Make every other item fill up the same width (33.3%) */
-    .projects article:nth-child(4n+2),
-    .projects article:nth-child(4n+3),
-    .projects article:nth-child(4n+4) {
-        width: 1em;
-    }
-
-    .projects::before,
-    .projects::after {
-        content: "";
-        flex-basis: 100%;
-        width: 0;
-        order: 2;
-    }
-
-    section,
-    header {
-        margin-bottom: 0.5em;
-    }
-}
-
-
-
 /* COLORS */
 
 .foreground {
