@@ -367,31 +367,6 @@ img {
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
-    .peeker {
-        position: absolute;
-        right: 0;
-        width: 140px;
-        left: unset;
-    }
-
-    #index .p3 {
-        padding-right: 115px!important;
-    }
-
-    .p1 {
-        padding: 0;
-    }
-    
-    #desktop {
-        display: none;
-    }
-
-    #mobile {
-        display: flex;
-    }
-}
-
 .icon {
     height: 3.5em;
     border-radius: 20px;
@@ -727,6 +702,29 @@ a.pill.accent {
 
     #navigation-mobile .link {
         font-size: 40px;
+    }
+    
+    .peeker {
+        position: absolute;
+        right: 0;
+        width: 140px;
+        left: unset;
+    }
+
+    #index .p3 {
+        padding-right: 115px!important;
+    }
+
+    .p1 {
+        padding: 0;
+    }
+    
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: flex;
     }
 }
 
