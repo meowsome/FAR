@@ -25,7 +25,7 @@
         <div class="main">
             <header class="w10">
                 <div id="desktop" class="wrapper-horizontal center">
-                    <div class="w4 left alt-left">
+                    <div class="w5 left alt-left">
                         <a class="link ripple-button-light" href="/">
                             <div class="wrapper-horizontal center left">
                                 <img class="icon" src="/assets/images/logo.jpg">
@@ -35,7 +35,7 @@
                         </a>
                     </div>
 
-                    <div id="navigation" class="right w6 alt-left">
+                    <div id="navigation" class="right w5 alt-left">
                         <div class="wrapper-horizontal">
                             <a href="/" class="link ripple-button-light{% if index %} active{% endif %}">About</a>
                             <a href="/events" class="link ripple-button-light{% if title == 'Events' %} active{% endif %}">Events</a>
@@ -45,7 +45,7 @@
                 </div>
 
                 <div id="mobile" class="wrapper-horizontal center">
-                    <div class="w4 left alt-left">
+                    <div class="w6 left alt-left">
                         <a class="link ripple-button-light" href="/">
                             <div class="wrapper-horizontal center left">
                                 <img class="icon" src="/assets/images/logo.jpg">
@@ -55,18 +55,24 @@
                         </a>
                     </div>
 
-                    <div class="right w6 alt-left">
+                    <div class="right w4 alt-left">
                         <div class="wrapper-horizontal">
-                            <div class="dropdown link">
-                                <label for="hamburger">
-                                    <i class="fas fa-bars ripple-button-light"></i>
-                                </label>
+                            <div class="dropdown">
+                                <h1>
+                                    <label for="hamburger">
+                                        <i class="fas fa-bars ripple-button-light"></i>
+                                    </label>
+                                </h1>
                                 <input id="hamburger" class="hiddenToggle" type="checkbox">
 
-                                <div id="navigation" class="foreground dropdown-content wrapper-vertical">
-                                    <a href="/" class="link ripple-button-light{% if index %} active{% endif %}">About</a>
-                                    <a href="/events" class="link ripple-button-light{% if title == 'Events' %} active{% endif %}">Events</a>
-                                    <a href="/join" class="link ripple-button-light{% if title == 'Join' %} active{% endif %}">Join</a>
+                                <div id="navigation-mobile" class="foreground wrapper-vertical center hidden">
+                                    <label for="hamburger" class="link ripple-button-dark x-button">
+                                        <i class="fas fa-times"></i>
+                                    </label>
+                                    
+                                    <a href="/" class="link ripple-button-dark{% if index %} active{% endif %}">About</a>
+                                    <a href="/events" class="link ripple-button-dark{% if title == 'Events' %} active{% endif %}">Events</a>
+                                    <a href="/join" class="link ripple-button-dark{% if title == 'Join' %} active{% endif %}">Join</a>
                                 </div>
                             </div>
                         </div>

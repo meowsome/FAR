@@ -724,6 +724,37 @@ a.pill.accent {
     .site-padding {
         padding: 5px 15px 15px 15px;
     }
+
+    #navigation-mobile .link {
+        font-size: 40px;
+    }
+}
+
+
+#navigation-mobile {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 10;
+    overflow-y: auto;
+}
+
+#navigation-mobile .link,
+#navigation-mobile .link i {
+    color: black!important;
+}
+
+#navigation-mobile .link.active {
+    color: #f9e109!important;
+}
+
+.x-button {
+    top: 50px;
+    right: 0;
+    position: absolute;
+    font-size: 40px;
 }
 
 /* COLORS */
